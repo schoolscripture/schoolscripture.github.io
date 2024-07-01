@@ -29,12 +29,9 @@
 				left: 20px;
 			}
 			.dropbtn {
-				position: absolute;
 				color: white;
   				border: none;
 				text-decoration: none;
-				top: 5px;
-				right:15px;
 			}
 			.dropdown {
   				position: relative;
@@ -59,6 +56,12 @@
 			.dropdown:hover .dropdown-content {display: block;}
 
 			.dropdown:hover .dropbtn {background-color: #3e8e41;}
+			.dropdownbox {
+				position
+				top: 5px;
+				right:15px;
+				position: absolute;
+			}
 		</style>
 		<body style="background-image:url('index-background.jfif');">
 			<div class="title">
@@ -69,12 +72,14 @@
 					</a>
 				</div>
 				<div class="dropdown">
-	  				<button class="dropbtn"><a href="topics.html"><h2 style="text-align:right;color:white;top:25px;text-decoration:none; background-color:solid green;">TOPICS</h2></a></button>
-					<div class="dropdown-content">
-	    					<a href="#">My thoughts on the LGBT</a>
-	    					<a href="#">Link 2</a>
-	    					<a href="#">Link 3</a>
-	  				</div>
+					<div class="dropdownbox">
+		  				<button class="dropbtn"><a href="topics.html"><h2 style="text-align:right;color:white;top:25px;text-decoration:none; background-color:solid green;">TOPICS</h2></a></button>
+						<div class="dropdown-content">
+		    					<a href="#">My thoughts on the LGBT</a>
+		    					<a href="#">Link 2</a>
+		    					<a href="#">Link 3</a>
+		  				</div>
+					</div>
 				</div>
 			</div>
 			<div class="textbox">
