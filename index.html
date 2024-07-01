@@ -19,6 +19,36 @@
 				height: 25px;
 				top: 15px;
 			}
+			.dropbtn {
+ 				background-color: #04AA6D;
+				color: white;
+  				padding: 16px;
+  				font-size: 16px;
+  				border: none;
+			}
+			.dropdown {
+  				position: relative;
+  				display: inline-block;
+			}
+			.dropdown-content {
+ 				display: none;
+  				position: absolute;
+ 				background-color: #f1f1f1;
+ 				min-width: 160px;
+  				box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  				z-index: 1;
+			}
+			.dropdown-content a {
+  				color: black;
+  				padding: 12px 16px;
+  				text-decoration: none;
+  				display: block;
+			}
+			.dropdown-content a:hover {background-color: #ddd;}
+
+			.dropdown:hover .dropdown-content {display: block;}
+
+			.dropdown:hover .dropbtn {background-color: #3e8e41;}
 		</style>
 		<body style="background-image:url('index-background.jfif');">
 			<h1 style="color:white;text-align:center;background-color:forestgreen;">School Scripture</h1>
@@ -27,9 +57,17 @@
 					<img src="favicon.ico" style="width:25px;height:25px;top:15px">
 				</a>
 			</div>
+			<div class="dropdown">
+  				<button class="dropbtn"><a href="topics.html"><h2 style="text-align:right;color:white;top:25px;text-decoration:none">TOPICS</h2></a></button>
+				<div class="dropdown-content">
+    					<a href="#">Link 1</a>
+    					<a href="#">Link 2</a>
+    					<a href="#">Link 3</a>
+  				</div>
+			</div>
 			<div class="textbox">
 				<i style="font-size:'40px';color:white;">A blog that reveals what is happening at Arden Anglican School that realates to gospel tracts and Christianity in general. It is run by Toby Witt in the Class of 2027, but others are able to share through this website.</i>
 			</div>
-			<a href="topics.html"><h2 style="text-align:right;color:white;top:25px;text-decoration:none">TOPICS</h2></a>
+			
 		</body>
   	</html>
