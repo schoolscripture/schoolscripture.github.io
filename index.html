@@ -97,7 +97,7 @@
 				cursor: pointer;
 			}
 		</style>
-		<body style="background-image:url('index-background.jfif');">
+		<body style="background-image:url('index-background.jfif');" onload="on()">
 			<script>
 				function on() {
 				  document.getElementById("overlay").style.display = "block";
@@ -106,9 +106,6 @@
 				function off() {
 				  document.getElementById("overlay").style.display = "none";
 				}
-				function myFunction() { 
-					window.open("on()"); 
-				};
 			</script>
 			<div class="title">
 				<b style="color:white;font-size:24px;"><span style="text-align: center;">School Scripture</span></b>
