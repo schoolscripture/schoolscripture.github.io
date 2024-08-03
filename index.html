@@ -97,16 +97,7 @@
 				cursor: pointer;
 			}
 		</style>
-		<body onclick="on()" style="background-image:url('index-background.jfif');">
-			<script>
-				function on() {
-				  document.getElementById("overlay").style.display = "block";
-				}
-				
-				function off() {
-				  document.getElementById("overlay").style.display = "none";
-				}
-			</script>
+		<body onload="on()" style="background-image:url('index-background.jfif');">
 			<div class="title">
 				<b style="color:white;font-size:24px;"><span style="text-align: center;">School Scripture</span></b>
 				<div class="icon">
@@ -150,5 +141,14 @@
 				<i style="font-size:'40px';color:white;">My (Toby Witt) favourite bible passage is Galations 5:22-25, which reads, '22 But the fruit of the Spirit is love, joy, peace, forbearance, kindness, goodness, faithfulness, 23 gentleness and self-control. Against such things there is no law. 24 Those who belong to Christ Jesus have crucified the flesh with its passions and desires. 25 Since we live by the Spirit, let us keep in step with the Spirit.'</i>
 			</div>
 			<button onclick="on()">Turn on overlay effect</button>
+			<script>
+				function on() {
+				  document.getElementById("overlay").style.display = "block";
+				}
+				
+				function off() {
+				  document.getElementById("overlay").style.display = "none";
+				}
+			</script>
 		</body>
   	</html>
