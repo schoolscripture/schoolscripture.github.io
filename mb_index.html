@@ -40,13 +40,6 @@
   				position: relative;
   				display: inline-block;
 			}
-			.menubtn {
-				background-color: forestgreen;
-				color:white;
-				text-decoration: none;
-				border: none;
-				text-decoration: none;
-			}
 			.dropbtn {
 				color: white;
   				border: none;
@@ -91,11 +84,51 @@
 			}
 			a:active {
 				text-decoration: none;
-			
+			.topnav {
+				overflow: hidden;
+				background-color: #333;
+				position: relative;
+			}
+			.topnav #myLinks {
+				display: none;
+			}
+			.topnav a {
+				color: white;
+				padding: 14px 16px;
+				text-decoration: none;
+				font-size: 17px;
+				display: block;
+			}
+			.topnav a.icon {
+				background: black;
+				display: block;
+				position: absolute;
+				right: 0;
+				top: 0;
+			}
+			.topnav a:hover {
+				background-color: #ddd;
+				color: black;
+			}
+			.active {
+				background-color: #04AA6D;
+				color: white;
+			}
 		</style>
 		<body style="background-image:url('index-background.jfif');">
 			<div class="title">
 				<button class="menubtn" onclick="" float="left" onhover="color:black" font-size:20px;>&#9776;</button>
+				<div class="topnav">
+  <a href="#home" class="active">Logo</a>
+  <div id="myLinks">
+    <a href="#news">News</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
 				<b style="color:white;font-size:24px;"><span style="text-align: center;">School Scripture</span></b>
 				<div class="icon">
 					<a href="index.html">
